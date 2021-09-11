@@ -7,6 +7,13 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'mfe1',
+    loadChildren: () =>
+      import('mfe1/MfefeatureModule').then((m) => {
+        return m.MfefeatureModule;
+      }),
   }
 ];
 
