@@ -25,6 +25,13 @@ module.exports = {
     new ModuleFederationPlugin({
       
         // For remotes (please adjust)
+        name: "mfe1",
+        filename: "mfe1remoteEntry.js",
+        exposes: {
+            './MfefeatureModule': './projects/mfe1/src/app/mfefeature/mfefeature.module.ts',
+        }, 
+
+
         // name: "mfe1",
         // filename: "remoteEntry.js",
         // exposes: {

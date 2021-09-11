@@ -32,9 +32,12 @@ module.exports = {
         // },        
         
         // For hosts (please adjust)
+        remotes: {
+            "mfe1": "mfe1@http://localhost:5000/mfe1remoteEntry.js",
+        },
+
         // remotes: {
         //     "mfe1": "mfe1@http://localhost:4200/remoteEntry.js",
-
         // },
 
         shared: share({
